@@ -1,0 +1,11 @@
+﻿window.onload=function(){
+	$(window).scroll(function(){
+		if($("body").scrollTop()>($("header").height()+$(".topImg").height())){
+			$("#nav").css("position","fixed");
+			$("#nav").css("top","0px");
+		}
+		else{
+			$("#nav").css("position","relative");
+		}
+	});
+}
