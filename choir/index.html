@@ -8,7 +8,6 @@
 </head>
 <body>
 	<div id="header" align="center">
-			<!-- <img src="image/index/logo.png"> -->
 			<div>
 			<p>———————— 广东工业大学学生合唱团 ————————</p>
 			</div>
@@ -16,19 +15,19 @@
 	<img src="image/index/background_2.jpg" class="topImg"/>
 	<div id="nav">
 		<ul>
-			<li style="border-bottom:4px solid rgb(219,73,83);">
+			<li class="nav_red_border">
 				<a href="#intro" class="nav_CN">团队简介</a>
 				<p class="nav_EN">Introduction</p>
 			</li>
-			<li>
+			<li class="nav_white_border">
 				<a href="#shows" class="nav_CN">演出资料</a>
 				<p class="nav_EN">Shows</p>
 			</li>
-			<li>
+			<li class="nav_white_border">
 				<a href="#conductors" class="nav_CN">指挥老师</a>
 				<p class="nav_EN">Conductors</p>
 			</li>
-			<li>
+			<li class="nav_white_border">
 				<a href="#contact" class="nav_CN">联系我们</a>
 				<p class="nav_EN">Contact us</p>
 			</li>
@@ -50,15 +49,22 @@
 		<h1>演出资料</h1>
 		<h2>Shows</h2>
 		<div class="nav_2">
-			<a href="#" class="options">照片 Photos</a>
+			<a href="javascript:changeTo(1)" id="photo" class="options" style="color:rgb(219,73,83)">照片 Photos</a>
 			<p>|</p>
-			<a href="#" class="options">视频 Videos</a>
+			<a href="javascript:changeTo(2)" id="vedio" class="options">视频 Videos</a>
 			<p>|</p>
 		</div>
-		<div class="content">
-			<img src="image/index/shows_1.jpg" class="imgLong"/><img src="image/index/shows_2.jpg" class="imgShort imgMargin"/>
-			<img src="image/index/shows_5.jpg" class="imgShort"/><img src="image/index/shows_4.jpg" class="imgLong imgMargin"/>
-			<img src="image/index/shows_6.jpg" class="imgLong" style="margin-bottom:0;"/><img src="image/index/shows_3.jpg" class="imgShort imgMargin" style="margin-bottom:0;"/>
+		<div style="width:100%;overflow:hidden;">
+			<ul class="content">
+				<li>
+					<img src="image/index/shows_1.jpg" class="imgLong"/><img src="image/index/shows_2.jpg" class="imgShort imgMargin"/>
+					<img src="image/index/shows_5.jpg" class="imgShort"/><img src="image/index/shows_4.jpg" class="imgLong imgMargin"/>
+					<img src="image/index/shows_6.jpg" class="imgLong" style="margin-bottom:0;"/><img src="image/index/shows_3.jpg" class="imgShort imgMargin" style="margin-bottom:0;"/>
+				</li>
+				<li>
+					
+				</li>
+			</ul>
 		</div>
 	</div>
 	<div class="container" id="conductors">
@@ -66,17 +72,17 @@
 		<h2>Conductors</h2>
 		<div>
 			<div class="conductor">
-				<img src="image/index/conductors_1.jpg"><p>指挥：梁为<br><br>
+				<img src="image/index/conductors_1.jpg"><p><strong>指挥：梁为</strong><br><br>
 				毕业于乌克兰国立柴可夫斯基音乐学院，声乐表演硕士，广东工业大学通识教育中心艺术教研部主任，中国教育学会合唱学术委员会委员、中国高校合唱委员会副秘书长，广东省合唱协会理事、广东合唱联盟理事、广州合唱协会理事。<br/>2008年以来，率领广东工业大学合唱团参加各类比赛，荣获第六届世界合唱比赛金奖冠军及银奖、第七届中国音乐金钟奖合唱比赛优胜奖、教育部全国大学生艺术展演二等奖、广东省大学生艺术展演一等奖等，累计获奖五十余项，个人论文亦获教育部二等奖。
 				</p>
 			</div>
 			<div class="conductor">
-				<img src="image/index/conductors_2.jpg"><p>指挥：吴凡<br><br>
+				<img src="image/index/conductors_2.jpg"><p><strong>指挥：吴凡</strong><br><br>
 				1996年毕业于星海音乐学院理论作曲系五年制本科，同年到广东工业大学任教至今。为广东省音乐家协会会员、广州钢琴学会会员，师从中国当代著名作曲家施詠康先生。<br/><br/>曾长期受聘于星海音乐学院成教部、广东文艺职业学院，担任钢琴专业主科、即兴编配、视唱练耳、合唱训练课程专业教师。工作至今，发表论文和音乐作品20余篇（首）， 出版40万字专业著作一部。
 				</p>
 			</div>
 			<div class="conductor">
-				<img src="image/index/conductors_4.jpg"><p>前任指挥：赵晓爱<br><br>
+				<img src="image/index/conductors_4.jpg"><p><strong>前任指挥：赵晓爱</strong><br><br>
 				广东工业大学声乐教授，系中国音乐家协会会员、全国高等教育学会音乐专业委员会理事，广东省高等教育学会音乐专业委员会理事，全国艺术水平高级考官。<br/><br/>在30多年的高校艺术教育生涯中，作为指导教师及指挥，曾带领学生合唱团参加国内外各类比赛并获奖。个人于2003年举办独唱音乐会；2004年带领学生艺术团赴欧洲访问表演；2007年曾担任高校试验合唱团领唱赴维也纳金色大厅演出。
 				</p>
 			</div>
@@ -86,7 +92,50 @@
 	<div class="container" id="contact">
 		<h1>联系我们</h1>
 		<h2>Contact us</h2>
-		
+		<div class="map">
+			<a href="http://j.map.baidu.com/k4evC" target="_blank"><img src="image/index/map.jpg" /></a><div>
+			<p>我们的固定训练时间为每周二及周四晚上七点至十点，如果你希望对我们的团队有更深入的了解，
+			我们欢迎你在上述时段内亲临我们的排练现场。我们的排练地点是 <a href="http://j.map.baidu.com/k4evC" target="_blank" style="color:#4fc0de">广工（大学城校区）正门综合楼502</a> ，你可以从地图指示处的二楼平台进入综合楼。<br><br>
+			我们亦随时欢迎新成员的加入，如果你是本校的学生，不论造诣深浅，只要有一颗热爱音乐的心，
+			你都可以带上自己对音乐的见解，来参与到我们这个大家庭中，踏上你在音乐旅途上的新一站！
+			</p>
+			</div>
+			
+		</div>
+		<!-- <div class="contact_info">
+			<p>关注我们获取更多精彩动态！<br>#contact .contact_info </p><img src="image/index/weibo.jpg" /><img src="image/index/wx.jpg" />
+		</div> -->
 	</div>
+	<div class="container" id="footer">
+		<div style="margin:0 auto;width:100%;">
+			<p><strong style="font-size:18px;font-size:1.5rem;">广东工业大学学生合唱团</strong><br>
+			地址：广东省广州市番禺区番禺大学城外环西路100号广东工业大学正门综合楼502<br>
+			微信：gdut_choir<br>
+			微博：<a href="http://weibo.com/gdutchoir?is_hot=1" target="_blank" style="color:#fff">广东工业大学合唱团</a><br>
+			Copyright © 2016, www.gdutchoir.cn. All rights reserved.<br>
+			粤ICP备16054679号-1
+			</p><img src="image/index/logo_2.png" />
+		</div>
+
+	</div>
+		<div style="height:2em;background-color:rgb(179,39,52)">
+			
+		</div>
+<script>
+	function changeTo(num){
+		$("#shows .content").stop();
+		if(num==2){
+			$("#vedio").css("color","rgb(219,73,83)");
+			$("#photo").css("color","#999");
+			$("#shows .content").animate({"marginLeft":"-100%"},500)
+		}
+		else{
+			$("#photo").css("color","rgb(219,73,83)");
+			$("#vedio").css("color","#999");
+			$("#shows .content").animate({"marginLeft":"0"},500)
+		}
+	}
+</script>
 </body>
+<!-- 本站由广工合唱团13级团员李思隆开发 -->
 </html>
