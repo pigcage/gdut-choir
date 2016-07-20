@@ -1,49 +1,70 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-<title>广东工业大学合唱团</title>
+<title>广东工业大学学生合唱团</title>
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/index.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 	<div id="header" align="center">
-			<div>
-			<p>———————— 广东工业大学学生合唱团 ————————</p>
-			</div>
+		<div>
+			<p>广东工业大学学生合唱团 · GDUT Choir</p>
+		</div>
 	</div>
 	<img src="image/index/background_2.jpg" class="topImg"/>
 	<div id="nav">
 		<ul>
-			<li class="nav_red_border">
-				<a href="#intro" class="nav_CN">团队简介</a>
+			<li class="nav_white_border">
+				<a href="javascript:scrollTo(0)" class="nav_CN">团队简介</a>
 				<p class="nav_EN">Introduction</p>
 			</li>
 			<li class="nav_white_border">
-				<a href="#shows" class="nav_CN">演出资料</a>
+				<a href="javascript:scrollTo(1)" class="nav_CN">演出资料</a>
 				<p class="nav_EN">Shows</p>
 			</li>
 			<li class="nav_white_border">
-				<a href="#conductors" class="nav_CN">指挥老师</a>
+				<a href="javascript:scrollTo(2)" class="nav_CN">指挥老师</a>
 				<p class="nav_EN">Conductors</p>
 			</li>
 			<li class="nav_white_border">
-				<a href="#contact" class="nav_CN">联系我们</a>
+				<a href="javascript:scrollTo(3)" class="nav_CN">联系我们</a>
 				<p class="nav_EN">Contact us</p>
-			</li>
+			</li><div id="nav_pointer" style="height:3px;width:25%;margin-left:0%;background-color:rgb(219,73,83);"></div>
 		</ul>
 	</div>
 	<div class="container" id="intro">
 		<h1>Welcome to GDUT Choir</h1>
 		<h2>—— we come together for music and friendship.</h2>
 		<div>
-			<img src="image/index/logo.jpg" /><p>Hi，欢迎来到广东工业大学合唱团。<br><br>
+			<div><span><img src="image/index/logo.jpg" /></span></div><p>Hi，欢迎来到广东工业大学合唱团。<br><br>
 			广东工业大学学生合唱团组建于2008年3月，其成员来自学校各院系不同专业，是一支年轻而充满活力的学生文艺团体。广工合唱团秉承“丰富校园生活，陶冶艺术情操，提高综合素质”的宗旨，在专业教师的悉心指导下，合唱团从业余团队逐渐成长为具有专业演唱水准的团队。合唱团通过排演各种节目和在各大晚会上演出培养同学们的素质和修养，为广工大增添了更多的人文气息，在参加广东省，全国乃至世界的各类合唱比赛中均获佳绩，充分展示了广东工业大学学子的真我风采。<br><br>
 			广工合唱团自成立以来一直受到学校领导、老师和同学们的热心关怀和支持。合唱团成员共有将近二百人，每位团员都经过持续不断的声乐和形体训练，具有良好的音乐素质和表演素质。
 			</p>
 		</div>
 	</div>
-	<div style="background-color:rgb(219,73,83);height:20em;" class="container">
+		<div style="font-size:0px;margin-top:8rem;position:relative;" >
+			<!--  -->
+			<div style="" class="data">
+				<div align="center">
+					<img src="image/index/data_1.png" />
+					<p class="numbers">2008</p>
+					<p>广工大合唱团建立于2008年</p>
+				</div><div align="center">
+					<img src="image/index/data_3.png" />
+					<p class="numbers">200+</p>
+					<p>我们拥有一支两百人的大团队</p>
+				</div><div align="center">
+					<img src="image/index/data_2.png" />
+					<p class="numbers">30+</p>
+					<p>获得省级至世界级奖项30余个</p>
+				</div>
+				
+			</div>
+			<img src="image/index/intro_4.jpg" style="width:100%;"/><div style="background-color:rgb(219,73,83);height:120px;">
+				<p style="text-align:center;line-height:120px;font-size:1.5rem;color:#fff;">愿意加入我们一起创造更精彩的未来吗？<a href="javascript:scrollTo(3)" style="color:#fff;">快戳这里</a>！</p>
+			</div>
+		</div>
 	</div>
 	<div class="container" id="shows">
 		<h1>演出资料</h1>
@@ -51,18 +72,21 @@
 		<div class="nav_2">
 			<a href="javascript:changeTo(1)" id="photo" class="options" style="color:rgb(219,73,83)">照片 Photos</a>
 			<p>|</p>
-			<a href="javascript:changeTo(2)" id="vedio" class="options">视频 Videos</a>
+			<a href="javascript:changeTo(2)" id="video" class="options">视频 Videos</a>
 			<p>|</p>
 		</div>
 		<div style="width:100%;overflow:hidden;">
 			<ul class="content">
 				<li>
 					<img src="image/index/shows_1.jpg" class="imgLong"/><img src="image/index/shows_2.jpg" class="imgShort imgMargin"/>
-					<img src="image/index/shows_5.jpg" class="imgShort"/><img src="image/index/shows_4.jpg" class="imgLong imgMargin"/>
+					<img src="image/index/shows_5_1.jpg" class="imgShort"/><img src="image/index/shows_4.jpg" class="imgLong imgMargin"/>
 					<img src="image/index/shows_6.jpg" class="imgLong" style="margin-bottom:0;"/><img src="image/index/shows_3.jpg" class="imgShort imgMargin" style="margin-bottom:0;"/>
 				</li>
 				<li>
-					
+					<video style="width:100%;" src="a.mp4" controls="controls">你的浏览器不支持该视频播放，请点击下方链接观看视频</video>
+					<p style="margin:1em 0;color:#999">由于网站服务器较小，若视频加载缓慢，或者你希望看到更多的视频，请
+					<a style="color:rgb(219,73,83)" href="http://v.qq.com/search.html?pagetype=3&stj2=search.smartbox&stag=txt.historyword&ms_key=%E5%B9%BF%E5%B7%A5%E5%90%88%E5%94%B1%E5%9B%A2" target="_blank">点击此处</a>
+					跳转到腾讯视频观看</p>
 				</li>
 			</ul>
 		</div>
@@ -88,7 +112,14 @@
 			</div>
 		</div>
 	</div>
-	<div style="background-color:rgb(219,73,83);height:14em;" class="container"></div>
+	<div class="departments container">
+		<h2>我们的部门</h2>
+		<p>广工合唱团下设三大部门以维持团队的正常运作<br>在这里，音乐与工作并重</p>
+		<img src="image/index/department_1.png"><img src="image/index/department_2.png"><img src="image/index/department_3.png" style="margin-right:0"><br>
+		<span><strong style="font-size:1.4em;line-height:2.8em;">事务部</strong><br>下设活动组、物资组、财务组<br>统筹及规划一切的活动</span><span>
+		<strong style="font-size:1.4em;line-height:2.8em;">秘书部</strong><br>下设行政组、谱务组、人事组<br>团队行政管理的负责者</span><span style="margin-right:0;">
+		<strong style="font-size:1.4em;line-height:2.8em;">宣策部</strong><br>下设技术组、摄影组、媒体组<br>掌控所有的宣传和运营</span>
+	</div>
 	<div class="container" id="contact">
 		<h1>联系我们</h1>
 		<h2>Contact us</h2>
@@ -96,45 +127,79 @@
 			<a href="http://j.map.baidu.com/k4evC" target="_blank"><img src="image/index/map.jpg" /></a><div>
 			<p>我们的固定训练时间为每周二及周四晚上七点至十点，如果你希望对我们的团队有更深入的了解，
 			我们欢迎你在上述时段内亲临我们的排练现场。我们的排练地点是 <a href="http://j.map.baidu.com/k4evC" target="_blank" style="color:#4fc0de">广工（大学城校区）正门综合楼502</a> ，你可以从地图指示处的二楼平台进入综合楼。<br><br>
-			我们亦随时欢迎新成员的加入，如果你是本校的学生，不论造诣深浅，只要有一颗热爱音乐的心，
+			我们亦随时欢迎新成员的加入，如果你是本校的学生，不论你在音乐上的造诣深浅，只要有一颗热爱音乐的心，
 			你都可以带上自己对音乐的见解，来参与到我们这个大家庭中，踏上你在音乐旅途上的新一站！
 			</p>
+			<a href="http://jq.qq.com/?_wv=1027&k=2KdU29G"><img src="image/index/contact_qq.jpg" /></a>
+			<a href="http://weibo.com/gdutchoir?is_hot=1" target="_blank"><img src="image/index/contact_weibo.jpg" /></a>
+			<a href="javascript:qrcode()"><img src="image/index/contact_wx.jpg" /></a>
+			<img id="qrcode" src="image/index/wx.jpg" alt="扫描关注公众号！"/>
 			</div>
-			
 		</div>
-		<!-- <div class="contact_info">
-			<p>关注我们获取更多精彩动态！<br>#contact .contact_info </p><img src="image/index/weibo.jpg" /><img src="image/index/wx.jpg" />
-		</div> -->
 	</div>
 	<div class="container" id="footer">
-		<div style="margin:0 auto;width:100%;">
+		<div class="footer_inner">
 			<p><strong style="font-size:18px;font-size:1.5rem;">广东工业大学学生合唱团</strong><br>
-			地址：广东省广州市番禺区番禺大学城外环西路100号广东工业大学正门综合楼502<br>
-			微信：gdut_choir<br>
+			地址：广东省广州市番禺区番禺大学城外环西路100号广东工业大学正门综合楼五楼502<br>
+			微信公众号：gdut_choir<br>
 			微博：<a href="http://weibo.com/gdutchoir?is_hot=1" target="_blank" style="color:#fff">广东工业大学合唱团</a><br>
-			Copyright © 2016, www.gdutchoir.cn. All rights reserved.<br>
-			粤ICP备16054679号-1
-			</p><img src="image/index/logo_2.png" />
+			粤ICP备16054679号-1<br>
+			Copyright © 2016, www.gdutchoir.cn. All rights reserved.
+			</p><div><span><img src="image/index/logo_2.png" /></span></div>
 		</div>
-
 	</div>
-		<div style="height:2em;background-color:rgb(179,39,52)">
-			
-		</div>
+	<p class="sign">广东工业大学学生合唱团 · 星汇传媒</p>
 <script>
+	//演出资料切换
 	function changeTo(num){
 		$("#shows .content").stop();
 		if(num==2){
-			$("#vedio").css("color","rgb(219,73,83)");
+			$("#video").css("color","rgb(219,73,83)");
 			$("#photo").css("color","#999");
 			$("#shows .content").animate({"marginLeft":"-100%"},500)
 		}
 		else{
 			$("#photo").css("color","rgb(219,73,83)");
-			$("#vedio").css("color","#999");
+			$("#video").css("color","#999");
 			$("#shows .content").animate({"marginLeft":"0"},500)
 		}
 	}
+	//弹出二维码
+	function qrcode(){
+		var code = $("#contact .map #qrcode");
+		code.stop();
+		if(!this.ifOpen){
+			this.ifOpen = true;
+			code.animate({"width":"8em"},500);
+		}
+		else{
+			this.ifOpen = false;
+			code.animate({"width":"0em"},500);
+		}
+	}
+	qrcode.ifOpen=false;//二维码是否已显示
+	
+	//导航条点击事件
+	function scrollTo(position){
+		switch (position){
+			case 0:
+				$("html,body").animate({scrollTop:$('#intro').offset().top-80},750);
+				break;
+			case 1:
+				$("html,body").animate({scrollTop:$('#shows').offset().top-80},750);
+				break;
+			case 2:
+				$("html,body").animate({scrollTop:$('#conductors').offset().top-80},750);
+				break;
+			case 3:
+				$("html,body").animate({scrollTop:$('#contact').offset().top-80},750);
+				break;
+			default:
+				break;
+		}
+		return;
+	}
+
 </script>
 </body>
 <!-- 本站由广工合唱团13级团员李思隆开发 -->
