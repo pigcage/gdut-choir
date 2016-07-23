@@ -1,0 +1,9 @@
+window.onload=function(){
+	$("#stories").mCustomScrollbar({
+		axis:"y",
+		theme:"minimal"
+	});
+	$("#preload").hide();
+	$("#stories").show();
+	$("#stories").animate({"opacity":"1"},500);
+}
